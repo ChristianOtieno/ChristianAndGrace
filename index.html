@@ -9,18 +9,18 @@
     <p id="description"> This is our survey page</p>
     <form id="survey-form">
         <label id="name-label" for="name">Full Name: </label>
-        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required><br><br>
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required><br>
         <label id="email-label" for="email">Email: </label>
-        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email"><br><br>
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email"><br>
         <label id="number-label" for="age">Age: </label>
-        <input type="number" name="age" id="number" min="10" max="65" class="input-field" placeholder="Age"><br><br>
+        <input type="number" name="age" id="number" min="10" max="65" class="input-field" placeholder="Age"><br>
         <select id=" dropdown">
             <option value ="Ocupation">Student</option>
             <option value ="Ocupation">Teacher</option>
             <option value ="Ocupation">Politician</option>
             <option value ="Ocupation">Driver</option>
             <option value ="Ocupation">Engineer</option> 
-        </select><br><br>
+        </select><br>
         <div>
             <input type="radio" name="gender" value="male" checked>Male
             <input type="radio" name="gender" value="female">Female
@@ -31,8 +31,9 @@
             <input type="checkbox" name="modeoftransport" value="aeroplane">Aeroplane
             <input type="checkbox" name="modeoftransport" value="train">Train
         </div>
-        <div>
-            Additional comments <input type="textarea">
+         <textarea rows="5" cols="50" placeholder=" Additional comments">   </textarea>
+        
+        <div> <button type ="button">Submit</button>
         </div>
     </form>
 </body>
