@@ -9,20 +9,31 @@
     <p id="description"> This is our survey page</p>
     <form id="survey-form">
         <label id="name-label" for="name">Full Name: </label>
-        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
-        <label id="email-label" for="email">* Email: </label>
-        <input type="email" name="email" id="email" class="input-field" required placeholder="Please enter your Email">
-        <label id="number-label" for="age">* Age: </label>
-        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
-    <select id=" dropdown">
-       <option value ="Ocupation"> Apple</option>
-       <option value ="Ocupation">Banana</option>
-       <option value ="Ocupation">Tangerines</option>
-       <option value ="Ocupation">Pear</option>
-       <option value ="Ocupation">Orange</option> </select>
-       <input type=" radio" name="gender" value="male">Male <br>
-       <input type=" radio" name="gender" value="male">Female <br>
-       
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required><br><br>
+        <label id="email-label" for="email">Email: </label>
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email"><br><br>
+        <label id="number-label" for="age">Age: </label>
+        <input type="number" name="age" id="number" min="10" max="65" class="input-field" placeholder="Age"><br><br>
+        <select id=" dropdown">
+            <option value ="Ocupation">Student</option>
+            <option value ="Ocupation">Teacher</option>
+            <option value ="Ocupation">Politician</option>
+            <option value ="Ocupation">Driver</option>
+            <option value ="Ocupation">Engineer</option> 
+        </select><br><br>
+        <div>
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female">Female
+        </div>
+        <div>
+            <input type="checkbox" name="modeoftransport" value="car" checked>Car
+            <input type="checkbox" name="modeoftransport" value="bus">Bus
+            <input type="checkbox" name="modeoftransport" value="aeroplane">Aeroplane
+            <input type="checkbox" name="modeoftransport" value="train">Train
+        </div>
+        <div>
+            Additional comments <input type="textarea">
+        </div>
     </form>
 </body>
 </html>
