@@ -1,0 +1,23 @@
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
+    var appleCount = 0;
+    var orangeCount = 0;
+    var i = 0;
+    const len = Math.min(apples.length, oranges.length);
+    while (i < len) {
+        let pos = apples[i] + applePos;
+        appleCount += pos >= leftSide && pos <= rightSide ? 1 : 0;
+        pos = oranges[i++] + orangePos;
+        orangeCount += pos >= leftSide && pos <= rightSide ? 1 : 0;
+    }
+
+    if (apples.length === oranges.length) {
+        console.log(`${appleCount}${'\n'}${orangeCount}`); return;
+    }
+    if (apples.length > len) {
+        while (i < apples.length) {
+            const pos = apples[i++] + appleTreePos; appleCount += pos >= leftSide && pos <= rightSide ? 1 : 0;
+        }
+        console.log(`${appleCount}${'\n'}${orangeCount}`); return;
+    }
+    while (i < oranges.length) { const pos = oranges[i++] + orangeTreePos; orangeCount += pos >= leftSide && pos <= rightSide ? 1 : 0; } console.log(`${appleCount}${'\n'}${orangeCount}`);
+}
